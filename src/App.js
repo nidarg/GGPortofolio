@@ -1,6 +1,6 @@
 
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import {Layout,Home,About,Project,SingleProject,NoMatch} from './components';
+import {Layout,Home,About,Project,Post, SinglePost,Redirect, NoMatch} from './components';
 
 const App = () => {
   return (
@@ -12,7 +12,11 @@ const App = () => {
           <Route path='about' element={<About/>} />
           
           <Route path='project' element={<Project/>} />
-          <Route path='project/slug' element={<SingleProject/>} />
+         
+          <Route path='post/:slug' element={<SinglePost/>} />
+          <Route path='post' element={<Post/>} />
+          
+          <Route path='external-link' element={<Redirect/>} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
