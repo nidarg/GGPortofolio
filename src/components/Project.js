@@ -15,14 +15,14 @@ const Project = () => {
   },[])
 
   return (
-    <main className='bg-slate-300 min-h-screen p-12'>
+    <main className='bg-slate-300 min-h-screen p-12 xs:w-full p-0'>
     <section className='container mx-auto'>
       <h1 className='text-5xl flex justify-center cursive mb-10'>My Projects</h1>
-      <section className='grid lg:grid-cols-2 gap-8 ' >
+      <section className='grid lg:grid-cols-2 gap-8' >
         {projectData && projectData.map((project,index)=>{
           
           return(
-        <article key={index} className='relative rounded-lg shadow-xl bg-white p-16'>
+        <article key={index} className='relative  rounded-lg shadow-xl bg-white p-16'>
           <h3 className='text-gray-800 text-3xl font-bold mb-2 hover:text-red-700'>
             <a href={project.link} alt={project.title} target='_blank' rel='noreferrer noopener'>{project.title}</a>
           </h3>
