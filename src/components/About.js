@@ -29,11 +29,12 @@ const About = () => {
   return (
     <main className='relative'>
      
-      <div className='p-10 lg:pt-48 container max-auto relative'>
+      <div className='p-10 lg:pt-48 container mx-auto relative'>
         <section className='bg-slate-600 rounded-lg shadow-2xl lg:flex-cols p-20'>
-          <div className='xs:flex-row flex-cols'>
-          <img src={urlFor(author.authorImage).url()} alt='' className='rounded w-32 h-32 lg:w-64 lg:h-64 mr-8' />
-          <div className='text-lg flex flex-col justify-center'>
+          <div className='xs:flex-row sm:flex flex-cols '>
+          <img src={urlFor(author.authorImage).url()} alt='' className='rounded w-32 h-32 lg:w-64 lg:h-64
+          ' />
+          <div className='text-lg flex flex-col justify-center pl-2'>
             <h1 className='cursive text-xl text-green-200 mb-4'>Hi, my name is Gheti Gradin and among the things I like the most are good coffee and ... web development  </h1>
           </div>
           </div>
